@@ -4,7 +4,6 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 @Injectable()
 export class HttpProxyService {
-
   constructor(private http: HttpClient) {
   }
 
