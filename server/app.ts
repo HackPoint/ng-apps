@@ -4,15 +4,14 @@ import * as dotenv from 'dotenv';
 import * as morgan from 'morgan';
 import * as path from 'path';
 
+// routers
 import { ApiRoutes } from './routes/api';
 
 const app = express();
-const apiRoutes = new ApiRoutes();
 
 process.env.NODE_ENV = 'dev';
 dotenv.config({path: '.env'});
 app.set('port', (process.env.PORT || 3000));
-
 app.use('/', express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -46,6 +45,10 @@ app.use((req, res, next) => {
 });
 
 
+
+
+const apiRoutes = new ApiRoutes();
 apiRoutes.init(app);
 
+app.listen((process.env.PORT || 3000));
 export { app };
