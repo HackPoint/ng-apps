@@ -50,5 +50,5 @@ app.use((req, res, next) => {
 const apiRoutes = new ApiRoutes();
 apiRoutes.init(app);
 
-app.listen((process.env.PORT || 3000));
-export { app };
+const server = app.listen((process.env.PORT || 3000));
+export { app, server };
