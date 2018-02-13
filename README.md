@@ -1,7 +1,7 @@
 # Angular and NodeJS with Typescript
 ## Updated to latest versions
 
-### CI/CD
+### Build
 [![Build Status](https://travis-ci.org/HackPoint/ng-apps.png?branch=master)](https://travis-ci.org/HackPoint/ng-apps)
 
 
