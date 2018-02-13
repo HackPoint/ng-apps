@@ -1,6 +1,6 @@
 # Angular and NodeJS with Typescript
 ## Updated to latest versions
-
+[![Build Status](https://travis-ci.org/{user}/{repo}.png?branch=master)](https://travis-ci.org/{user}/{repo})
 [![Greenkeeper badge](https://badges.greenkeeper.io/HackPoint/ng-apps.svg)](https://greenkeeper.io/)
 
 ### Getting started:
