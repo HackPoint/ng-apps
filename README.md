@@ -2,7 +2,7 @@
 ## Updated to latest versions
 
 ### CI/CD
-[![Build Status](https://travis-ci.org/{user}/{repo}.png?branch=master)](https://travis-ci.org/{user}/{repo})
+[![Build Status](https://travis-ci.org/HackPoint/ng-apps.png?branch=master)](https://travis-ci.org/HackPoint/ng-apps)
 
 
 ### Getting started:
