@@ -12,4 +12,13 @@ script: # the build step
 notifications:
   email: # only receive email when the build status changes (someone broke the build!)
     on_failure: change
-    on_success: change 
+    on_success: change
+after_success:
+- test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false"
+
+notifications:
+email:
+recipients:
+- genash@gmail.com
+on_success: always # default: change
+on_failure: always # default: always
