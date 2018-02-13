@@ -19,7 +19,7 @@
   * [TypeORM](https://github.com/typeorm/typeorm/) - TypeScript ORM (uses sqlite as an example)
   * [winston](https://github.com/winstonjs/winston/) - logging framework
 
-###License:
+### License:
 MIT
 
 
