@@ -49,7 +49,7 @@
   "devDependencies": {
     "@angular/cli": "1.6.8",
     "@angular/compiler-cli": "^5.2.3",
-    "@angular/language-service": "5.2.4",
+    "@angular/language-service": "^5.2.5",
     "@types/body-parser": "^1.16.8",
     "@types/chai": "^4.1.2",
     "@types/chai-http": "^3.0.3",
