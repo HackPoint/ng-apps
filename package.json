@@ -1,6 +1,6 @@
 {
   "name": "ng-apps",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "build": "ng build",
@@ -36,7 +36,7 @@
     "errorhandler": "latest",
     "inversify": "^4.10.0",
     "method-override": "^2.3.10",
-    "mocha": "^5.0.0",
+    "mocha": "^5.0.1",
     "mocha-typescript": "^1.1.12",
     "morgan": "^1.9.0",
     "path": "^0.12.7",
@@ -49,7 +49,7 @@
   "devDependencies": {
     "@angular/cli": "1.6.8",
     "@angular/compiler-cli": "^5.2.3",
-    "@angular/language-service": "^5.2.3",
+    "@angular/language-service": "^5.2.5",
     "@types/body-parser": "^1.16.8",
     "@types/chai": "^4.1.2",
     "@types/chai-http": "^3.0.3",
@@ -62,7 +62,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/method-override": "0.0.31",
     "@types/morgan": "^1.7.35",
-    "@types/node": "^9.4.0",
+    "@types/node": "^9.4.6",
     "@types/winston": "^2.3.7",
     "codelyzer": "~4.1.0",
     "concurrently": "^3.5.1",

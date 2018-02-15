@@ -1,4 +1,14 @@
 import { Logger, LoggerInstance, LoggerOptions, transports } from 'winston';
+import * as fs from 'fs';
+import * as dotenv from 'dotenv';
+
+const logsDir = 'logs';
+const env = dotenv.config({path: '.env'});
+
+console.log(env);
+if (!fs.existsSync(`./${logsDir}`)) {
+  fs.mkdirSync(`./${logsDir}`);
+}
 
 export const logger: LoggerInstance = new Logger(<LoggerOptions> {
   exitOnError: false,
@@ -14,7 +24,7 @@ export const logger: LoggerInstance = new Logger(<LoggerOptions> {
     }),
     new transports.File({
       level: 'info',
-      filename: './logs/all-logs.log',
+      filename: `./${logsDir}/all-logs.log`,
       handleExceptions: true,
       json: true,
       maxsize: 5242880,
@@ -23,9 +33,3 @@ export const logger: LoggerInstance = new Logger(<LoggerOptions> {
     }),
   ]
 });
-
-declare module 'winston' {
-  interface LeveledLogMethod {
-    (meta: any): LoggerInstance;
-  }
-}
