@@ -1,6 +1,5 @@
 // module dependencies
 import { ApiServer } from './infrastructure/api-server';
-import TYPES from 'types';
 import * as dotenv from 'dotenv';
 
 const debug = require('debug')('express:server');
