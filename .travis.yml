@@ -6,14 +6,12 @@ node_js:
 branches:
     only:
     - master
-
 cache:
    directories:
    - node_modules
 
 before_script: # commands to run before the build step
    - npm install -g --silent @angular/cli
-   - npm i
 
 script: # the build step
    - npm run prod
@@ -22,11 +20,6 @@ notifications:
   email: # only receive email when the build status changes (someone broke the build!)
     on_failure: change
     on_success: change
-
-after_success:
-    - npm run testbe
-    - npm test
-
 
 notifications:
 email:
