@@ -1,18 +1,14 @@
 language: node_js
-
 node_js:
    - node # will use latest node
-
 branches:
     only:
     - master
 cache:
    directories:
    - node_modules
-
 before_script: # commands to run before the build step
    - npm install -g --silent @angular/cli
-
 script: # the build step
    - npm run prod
    - ng build -bh "https://github.com/HackPoint/ng-apps/"
@@ -20,9 +16,10 @@ notifications:
   email: # only receive email when the build status changes (someone broke the build!)
     on_failure: change
     on_success: change
-
+after_success:
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false"
 notifications:
-email:
-- genash@gmail.com
+  email:
+    - genash@gmail.com
 on_success: always # default: change
 on_failure: always # default: always
