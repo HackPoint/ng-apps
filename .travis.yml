@@ -1,11 +1,18 @@
 language: node_js
 node_js:
    - node # will use latest node
+
+sudo: required
+dist: trusty
+addons:
+  chrome: stable
 branches:
     only:
     - master
 before_script:
-   - npm install -g --silent @angular/cli
+    - "sudo chown root /opt/google/chrome/chrome-sandbox"
+    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
+    - npm install -g --silent @angular/cli
 script: # the build step
    - npm run prod:build
    - ng build -bh "https://github.com/HackPoint/ng-apps/"
