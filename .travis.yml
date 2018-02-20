@@ -15,7 +15,7 @@ before_script:
     - npm install -g --silent @angular/cli
 script: # the build step
    - npm run prod:build
-   - ng build -bh "https://github.com/HackPoint/ng-apps/"
+   - ng build --prod --base-href "https://HackPoint.github.io/ng-apps/"
    - npm test
    - npm run testbe
 notifications:
