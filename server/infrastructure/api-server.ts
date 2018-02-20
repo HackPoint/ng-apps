@@ -30,7 +30,6 @@ export class ApiServer extends Server {
 
     // mount logger
     // this.app.use(require('morgan')({'stream': logger.info}));
-    this.app.use(require('morgan')('combined', {stream: logger.stream}));
 
     // mount json form parser
     this.app.use(bodyParser.json());
