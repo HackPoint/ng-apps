@@ -1,0 +1,9 @@
+{
+  "watch": [
+    "server/**/*.ts"
+  ],
+  "ignore": [
+    "server/**/*.spec.ts"
+  ],
+  "ext": "ts js json"
+}
