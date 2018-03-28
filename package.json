@@ -63,7 +63,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/method-override": "0.0.31",
     "@types/morgan": "^1.7.35",
-    "@types/node": "^9.4.6",
+    "@types/node": "^9.6.1",
     "@types/winston": "^2.3.8",
     "codelyzer": "~4.1.0",
     "concurrently": "^3.5.1",
