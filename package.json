@@ -36,7 +36,7 @@
     "dotenv": "^5.0.1",
     "errorhandler": "latest",
     "inversify": "^4.11.1",
-    "method-override": "^2.3.10",
+    "method-override": "^3.0.0",
     "mocha": "^5.0.1",
     "mocha-typescript": "^1.1.12",
     "morgan": "^1.9.0",
