@@ -64,7 +64,7 @@
     "@types/method-override": "0.0.31",
     "@types/morgan": "^1.7.35",
     "@types/node": "^9.4.6",
-    "@types/winston": "^2.3.8",
+    "@types/winston": "^2.4.4",
     "codelyzer": "~4.1.0",
     "concurrently": "^3.5.1",
     "cookie-parser": "latest",
