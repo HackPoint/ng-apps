@@ -33,7 +33,7 @@
     "cookie-parser": "latest",
     "core-js": "^2.5.3",
     "cors": "^2.8.4",
-    "dotenv": "^5.0.1",
+    "dotenv": "^6.1.0",
     "errorhandler": "latest",
     "inversify": "^4.11.1",
     "method-override": "^2.3.10",
