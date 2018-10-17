@@ -35,7 +35,7 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "errorhandler": "latest",
-    "inversify": "^4.11.1",
+    "inversify": "^5.0.1",
     "method-override": "^2.3.10",
     "mocha": "^5.0.1",
     "mocha-typescript": "^1.1.12",
