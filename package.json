@@ -58,7 +58,7 @@
     "@types/cors": "^2.8.3",
     "@types/dotenv": "^4.0.2",
     "@types/errorhandler": "0.0.32",
-    "@types/express": "^4.11.1",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/method-override": "0.0.31",
